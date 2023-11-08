@@ -11,9 +11,9 @@
     <name>Bear</name>
 
     <modules>
-        <module>me.chris.bear-parent</module>
-        <module>me.chris.bear-common</module>
-        <module>me.chris.bear-boot</module>
+        <module>bear-parent</module>
+        <module>bear-common</module>
+        <module>bear-boot</module>
     </modules>
 
 </project>

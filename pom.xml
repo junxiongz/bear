@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.chris</groupId>
+    <artifactId>me.chris.bear</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Bear</name>
+
+    <modules>
+        <module>me.chris.bear-parent</module>
+        <module>me.chris.bear-common</module>
+        <module>me.chris.bear-boot</module>
+    </modules>
+
+</project>

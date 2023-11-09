@@ -9,8 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import lombok.Getter;
 import lombok.Setter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -26,13 +25,13 @@ import java.io.UnsupportedEncodingException;
  **/
 @Setter
 @Getter
+@Slf4j
 public class RequestLoggingFilter extends OncePerRequestFilter {
 
   private static final String DEFAULT_BEFORE_MESSAGE_PREFIX = "Before request [";
   private static final String DEFAULT_BEFORE_MESSAGE_SUFFIX = "]";
   private static final String DEFAULT_AFTER_MESSAGE_PREFIX = "After request [";
   private static final String DEFAULT_AFTER_MESSAGE_SUFFIX = "]";
-  private static final Logger log = LoggerFactory.getLogger(RequestLoggingFilter.class);
   private static final int DEFAULT_MAX_PAYLOAD_LENGTH = 1500;
   private boolean includeQueryString = false;
   private boolean includeClientInfo = false;

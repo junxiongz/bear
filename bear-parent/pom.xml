@@ -18,8 +18,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <source>17</source>
+                    <target>17</target>
                     <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
@@ -49,19 +49,52 @@
         <lombok.version>1.18.30</lombok.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
 
+        <!-- sa-token       -->
+        <sa.version>1.37.0</sa.version>
+
+        <!-- 数据源       -->
+        <druid.version>1.2.20</druid.version>
+
     </properties>
 
     <dependencyManagement>
 
-
-
-
         <dependencies>
 
-            <!-- me.chris.bear -->
+            <!--  druid          -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- sa           -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-spring-boot3-starter</artifactId>
+                <version>${sa.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-reactor-spring-boot3-starter</artifactId>
+                <version>${sa.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-redis-jackson</artifactId>
+                <version>${sa.version}</version>
+            </dependency>
+
+            <!-- bear -->
             <dependency>
                 <groupId>me.chris</groupId>
-                <artifactId>me.chris.bear-common</artifactId>
+                <artifactId>bear-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>me.chris</groupId>
+                <artifactId>bear-boot</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
@@ -126,9 +159,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-
-
 
 
 </project>

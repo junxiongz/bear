@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.chris</groupId>
-    <artifactId>me.chris.bear-parent</artifactId>
+    <artifactId>bear-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <build>
         <plugins>

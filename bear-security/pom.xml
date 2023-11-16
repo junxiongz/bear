@@ -8,31 +8,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bear-common</artifactId>
-    <name>Bear common</name>
+    <artifactId>bear-security</artifactId>
+    <name>Bear Security</name>
 
     <dependencies>
-
+        <!-- Sa-Token 权限认证 -->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-reactor-spring-boot3-starter</artifactId>
         </dependency>
 
+        <!-- Sa-Token 整合 Redis -->
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-redis-jackson</artifactId>
         </dependency>
 
     </dependencies>

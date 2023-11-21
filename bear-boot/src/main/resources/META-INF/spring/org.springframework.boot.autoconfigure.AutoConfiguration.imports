@@ -1,1 +1,2 @@
 me.chris.bear.web.BearWebAutoConfiguration
+me.chris.bear.data.DataAuditorAutoConfiguration

@@ -12,17 +12,17 @@ import javax.annotation.Nullable;
 import java.io.Serializable;
 
 /**
- * @author Christopher
- * @date 2023/11/15
- **/
+ * @Author Christopher
+ * @Since 2023/11/21 1:35 PM
+ */
 @MappedSuperclass
 @QuerySupertype
 @Setter
 @Getter
-public class AbstractEntity<PK extends Serializable> extends AbstractPersistableIdLess<PK>{
+public class AbstractEntity<PK extends Serializable> extends AbstractPersistableIdLess<PK> {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // for MySQL or PostgreSQL
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Nullable
     private PK id;
 }

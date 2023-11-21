@@ -5,8 +5,8 @@ import lombok.experimental.UtilityClass;
 import java.util.Optional;
 
 /**
- * @author Christopher
- * @date 2023/11/8
+ * @Author Christopher
+ * @Date 2023/11/8
  **/
 public interface Errors {
 
@@ -109,6 +109,10 @@ public interface Errors {
         return Holder.BAD_JSON;
     }
 
+    static ErrorDetail badParam() {
+        return Holder.BAD_PARAM;
+    }
+
     @UtilityClass
     class Holder {
 
@@ -127,5 +131,6 @@ public interface Errors {
         private static final ErrorDetail INTERNAL_SERVER_ERROR = with(500, "服务内部错误");
         private static final ErrorDetail NOT_IMPLEMENTED = with(501, "操作未实现");
         private static final ErrorDetail SERVICE_UNAVAILABLE = with(503, "服务暂不可用");
+        private static final ErrorDetail BAD_PARAM = with(504, "参数转换错误");
     }
 }

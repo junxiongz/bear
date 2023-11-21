@@ -10,9 +10,9 @@ import lombok.Setter;
 import java.io.Serializable;
 
 /**
- * @author Christopher
- * @date 2023/11/15
- **/
+ * @Author Christopher
+ * @Since 2023/11/21 1:35 PM
+ */
 @MappedSuperclass
 @QuerySupertype
 @Setter

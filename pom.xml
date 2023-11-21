@@ -28,7 +28,7 @@
         <module>bear-parent</module>
         <module>bear-common</module>
         <module>bear-boot</module>
-        <module>bear-security</module>
+        <module>bear-gateway</module>
     </modules>
 
 </project>

@@ -25,12 +25,6 @@ public interface BaseQueryRepository<T, PK extends Serializable>
         QuerydslPredicateExecutor<T>,
         QueryByExampleExecutor<T> {
 
-    /**
-     * List page without count
-     * @return a page of data
-     */
-    List<T> listAll(Pageable pageable);
-
     /** {@inheritDoc} */
     @Override
     List<T> findAll(Sort sort);

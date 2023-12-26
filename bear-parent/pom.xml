@@ -103,12 +103,22 @@
         <!-- idea       -->
         <intellij.version>23.0.0</intellij.version>
 
+        <!--  xxl-job   -->
+        <xxl-job.version>2.3.0</xxl-job.version>
+
+
     </properties>
 
     <dependencyManagement>
 
         <dependencies>
 
+            <!--  xxl-job   -->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job.version}</version>
+            </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-envers -->
             <dependency>
@@ -179,12 +189,6 @@
             <dependency>
                 <groupId>me.chris</groupId>
                 <artifactId>bear-boot</artifactId>
-                <version>${bear.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>me.chris</groupId>
-                <artifactId>bear-security</artifactId>
                 <version>${bear.version}</version>
             </dependency>
 
